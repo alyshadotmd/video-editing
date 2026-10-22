@@ -8,10 +8,11 @@ Made by [Alysha](https://github.com/alyshadotmd) while building her own AI video
 
 | Skill | What it does |
 |---|---|
+| [`aroll-processing`](skills/aroll-processing/SKILL.md) | Turns raw talking-head footage into a tight rough cut. Drop in one long recording or several recordings of the same script, and it finds every take, picks the best piece of each line (from any recording), and cuts it so no word is chopped and no pause is left. Shows you the picks first, or just does the edit. |
 | [`broll-processing`](skills/broll-processing/SKILL.md) | Turns raw b-roll into a tagged library of short clips. AI watches and tags every moment, you pick the keepers and say why, and only your picks get cut and saved. Your reasons become rules, so it learns your taste. |
 | [`broll-selection`](skills/broll-selection/SKILL.md) | Plans b-roll for a first cut, line by line: which lines need b-roll, which clip from your library fits, and what you still need to film. Places the clips after you approve. |
 
-They work as a pair: processing builds the library, selection uses it.
+Start with a-roll processing for the rough cut. The b-roll pair works together: processing builds the library, selection places clips on the cut.
 
 ## How to use them
 
