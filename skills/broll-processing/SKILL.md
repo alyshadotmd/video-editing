@@ -9,13 +9,19 @@ description: |
 
 The goal: every b-roll video gets watched once, the best moments get picked, and only those clips are kept. Each kept clip is cut with a 1-second buffer and tagged by what's in it, so any shot can be found later without rewatching footage.
 
-This skill is built for **Claude** (Claude Code, or the Claude app with code tools turned on) and **Runneth**. It needs three things:
+This skill is built for **Claude Code** and **Runneth**. It needs three things:
 
 - **A way to see the video:** in Runneth, a video model watches it. Claude can't watch video, so it reads still frames instead: small contact sheets of 2 frames a second to find moments (`ffmpeg -i IN.mp4 -vf fps=2,scale=160:-2,tile=10x6 sheet_%02d.jpg`), full-size frames to judge them (`ffmpeg -ss <time> -i IN.mov -frames:v 1 frame.jpg`), plus the audio transcript when one is available. If there's no way to transcribe, work from the frames alone.
 - **A way to cut video:** ffmpeg, or any video editor.
 - **A b-roll library folder:** a place for clips plus two kinds of text files (an index and one file per shoot). Templates are in the `templates/` folder next to this file.
 
 Talk to the editor in plain everyday words, one idea at a time.
+
+## Before you start: the tools
+
+In Runneth, everything is already installed: skip this section.
+
+In Claude Code, this skill needs the free video tools the **video-editing-setup** skill installs. Check quietly that `~/.video-editing-tools/bin/ffmpeg -version` runs. If it does, use the tools in `~/.video-editing-tools/bin` (`ffmpeg`, `ffprobe`, `python`) wherever this skill says `ffmpeg`, `ffprobe` or `python3`, and carry on. If it doesn't, follow the video-editing-setup skill first, then come back here.
 
 ## Step 0: Ask one question first
 

@@ -1,7 +1,7 @@
 ---
 name: aroll-processing
 description: |
-  Turn raw talking-head footage full of repeated takes (one long recording, or several recordings of the same script) into a tight rough cut. Find every take of every line, judge each take on its words, sound and picture, pick the keeper for each line, and either show the editor the picks first or go straight to the cut. The cut is checked so no word is chopped and no pause is left in before anyone sees it. Built for Claude (Claude Code or the Claude app with code tools) and Runneth. Use when someone uploads raw talking-head footage and asks to find the takes, pick the best ones, make a cut list or rough cut it.
+  Turn raw talking-head footage full of repeated takes (one long recording, or several recordings of the same script) into a tight rough cut. Find every take of every line, judge each take on its words, sound and picture, pick the keeper for each line, and either show the editor the picks first or go straight to the cut. The cut is checked so no word is chopped and no pause is left in before anyone sees it. Built for Claude Code and Runneth. Use when someone uploads raw talking-head footage and asks to find the takes, pick the best ones, make a cut list or rough cut it.
   Triggers: "process my a-roll", "find my takes", "pick the best takes", "rough cut this", "cut list", "edit my talking head", "which take is best"
 ---
 
@@ -9,7 +9,7 @@ description: |
 
 The goal: one long recording, or several recordings of the same script, goes in, and a tight rough cut comes out, built from the best take of every line. Speech runs straight into speech, every word is whole, and the cut sounds like one clean take, on the first try.
 
-This skill is built for **Claude** (Claude Code, or the Claude app with code tools turned on) and **Runneth**. It needs:
+This skill is built for **Claude Code** and **Runneth**. It needs:
 
 - **ffmpeg** to measure the audio, grab still frames and cut the video.
 - **Word timings for everything said:** a speech-to-text tool that gives the time of each word (Whisper, faster-whisper, whisper.cpp).
@@ -17,6 +17,12 @@ This skill is built for **Claude** (Claude Code, or the Claude app with code too
 - **The check script** in `scripts/cut_check.py` (python3 with numpy and ffmpeg).
 
 Talk to the editor in plain everyday words, one idea at a time.
+
+## Before you start: the tools
+
+In Runneth, everything is already installed: skip this section.
+
+In Claude Code, this skill needs the free video tools the **video-editing-setup** skill installs. Check quietly that `~/.video-editing-tools/bin/ffmpeg -version` runs. If it does, use the tools in `~/.video-editing-tools/bin` (`ffmpeg`, `ffprobe`, `python`) wherever this skill says `ffmpeg`, `ffprobe` or `python3`, and carry on. If it doesn't, follow the video-editing-setup skill first, then come back here.
 
 ## Step 0: Two quick checks before any work
 
