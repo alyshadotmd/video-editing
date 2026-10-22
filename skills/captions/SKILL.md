@@ -63,6 +63,7 @@ Every caption uses **Figtree Bold**, white, with a black outline. No box, no sha
 2. **Inside the safe area:** every letter within x 180 to 900 and above y 1340. Measure each chunk's width; a chunk too wide gets split.
 3. **Clear of the headline.** While the headline is on screen, captions sit below it with a clear gap; when the headline sits low, captions move down within the safe area rather than overlapping it.
 4. **The same spot all video,** so the eye always knows where to look.
+5. **Captions sit below the mouth, never across the face.** Every caption clears the eyes, nose and mouth. When the face sits so low that the caption spot would cover it, the framing is what's wrong: send it back to framing to fix (or move the caption down within the safe area while it's fixed).
 
 ## Step 5: Build and burn
 
@@ -73,7 +74,7 @@ Every caption uses **Figtree Bold**, white, with a black outline. No box, no sha
 ## Step 6: Check before anyone sees it
 
 1. **Every word, once, on time:** compare the caption list to the transcript word for word.
-2. **A frame from every chunk that's widest or sits near the headline:** inside the safe area, nothing cut off, nothing overlapping the headline or the face.
+2. **A frame from every chunk:** inside the safe area, nothing cut off, nothing overlapping the headline, and the whole caption below the mouth. Use a face detector or read each frame; a caption across any part of the face fails the check.
 3. **With the word lighting up, the colour lands on the word being said,** checked at a few points through the video.
 
 ## Step 7: Learn from the editor

@@ -49,7 +49,7 @@ Give each option a few words on which job it does. Wait for the pick, unless the
 
 The default style, **box headline**:
 
-- **Figtree SemiBold, about 66px, sentence case,** on a solid rounded box per line (about 18px corners). The two lines' boxes overlap slightly so they read as one shape.
+- **Figtree SemiBold, about 66px, in sentence case: the first letter is always a capital,** on a solid rounded box per line (about 18px corners). The two lines' boxes overlap slightly so they read as one shape.
 - **White box with black text.**
 - **One line if it fits** between x 60 and 1020, otherwise two. When it won't fit in two lines at full size, rewrite it shorter; the size stays the same.
 - It can end with one emoji the person would actually use.
@@ -69,7 +69,7 @@ The default style, **box headline**:
 
 1. A frame at the start, middle and end of the hook: the headline sits inside the safe area, the face is fully visible, and the text is sharp.
 2. The frame just before the hook ends still has it, and the frame after doesn't.
-3. It's one or two lines, 10 words or fewer.
+3. It's one or two lines, 10 words or fewer, and starts with a capital letter.
 
 ## Step 7: Learn from the editor
 
