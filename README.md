@@ -23,10 +23,13 @@ Start with a-roll processing for the rough cut. The b-roll pair works together: 
 
 ## What you need
 
-- An AI that can watch video (or you, scrubbing through) to tag moments.
-- [ffmpeg](https://ffmpeg.org) or any video editor to cut clips.
+- [ffmpeg](https://ffmpeg.org), to measure audio, grab frames and cut clips.
+- A speech-to-text tool with word timings that runs on your computer, like [faster-whisper](https://github.com/SYSTRAN/faster-whisper), for the a-roll skill.
+- Python 3 with numpy, for the a-roll skill's cut check.
 - A folder for your b-roll library: clips plus a few markdown files.
+
+In Runneth, a video model watches the footage. Claude can't watch video, so the skills have it read still frames and the transcript instead.
 
 ## Make it yours
 
-The "what makes a moment worth keeping" rules come from one editor's real picks on a UGC product shoot. Every time you pick a clip, write down why. The skill turns those reasons into rules, so over time it picks the way you do.
+The keeper rules in each skill ("what makes a take the keeper", "what makes a moment worth keeping") come from one editor's real picks. Every time you swap a take or pick a clip, say why. The skills turn those reasons into rules, so over time they pick the way you do.
