@@ -9,7 +9,7 @@ description: |
 
 The goal: the right b-roll on the right line, chosen the way the editor would choose it. B-roll does two jobs: it adds context to what's being said, and it keeps people watching.
 
-This skill works with any AI tool or agent. It reads from a tagged b-roll library: a folder of short clips plus an index with a "Find by tag" table (each tag, then the clips that have it). The `broll-processing` skill builds one, and any folder of clips with tags works too. Placing the clips needs ffmpeg or any video editor.
+This skill is built for **Claude** (Claude Code, or the Claude app with code tools turned on) and **Runneth**. It reads from a tagged b-roll library: a folder of short clips plus an index with a "Find by tag" table (each tag, then the clips that have it). The `broll-processing` skill builds one, and any folder of clips with tags works too. Placing the clips needs ffmpeg or any video editor.
 
 Talk to the editor in plain everyday words, one idea at a time.
 

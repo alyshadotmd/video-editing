@@ -1,6 +1,6 @@
 # video-editing
 
-Skills for editing short-form video with AI, written so they work with any AI tool: Claude, ChatGPT, Gemini, Cursor, Runneth, or your own agent. Each skill is a plain markdown file with steps and rules. Nothing depends on one app.
+Skills for editing short-form video with AI, built for Claude (Claude Code, or the Claude app with code tools turned on) and Runneth. Each skill is a plain markdown file with steps and rules.
 
 Made by [Alysha](https://github.com/alyshadotmd) while building her own AI video editing stack.
 
@@ -15,9 +15,10 @@ They work as a pair: processing builds the library, selection uses it.
 
 ## How to use them
 
-1. **Agents that support skills** (Claude Code, Codex, and other tools that read `SKILL.md` files): copy a skill folder into your tool's skills folder.
-2. **Any chat AI:** paste the `SKILL.md` into the chat (or a project's instructions) and then send your footage or first cut.
-3. **Set up your library:** the templates live inside the skill that fills them in ([`broll-processing/templates/`](skills/broll-processing/templates/)). Copy them into a folder for your b-roll. Each skill folder works on its own, templates included.
+1. **Claude Code:** copy a skill folder into your skills folder.
+2. **The Claude app:** add the skill folder as a skill (code tools need to be on so it can run ffmpeg).
+3. **Runneth:** add the skill folder to your skills.
+4. **Set up your library:** the templates live inside the skill that fills them in ([`broll-processing/templates/`](skills/broll-processing/templates/)). Copy them into a folder for your b-roll. Each skill folder works on its own, templates included.
 
 ## What you need
 
