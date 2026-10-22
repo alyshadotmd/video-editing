@@ -17,6 +17,7 @@ In **Runneth**, everything is already installed: tell the person they're all set
 | ffmpeg and ffprobe | Cut video, pull the sound out, grab still frames, measure length |
 | Python 3 | Runs the small scripts, like the check that no word got chopped |
 | numpy | Does the math on the sound |
+| Pillow | Draws text boxes, like the hook headline |
 | faster-whisper | Writes down every spoken word with the time it was said |
 
 Everything except Python goes into one private tool folder, `~/.video-editing-tools`, so nothing else on the computer changes. When `~/.video-editing-tools/bin` exists, the editing skills use the tools inside it.
@@ -26,7 +27,7 @@ Everything except Python goes into one private tool folder, `~/.video-editing-to
 Run these and note which ones fail:
 
 - `python3 --version`
-- `~/.video-editing-tools/bin/python -c "import numpy, faster_whisper"`
+- `~/.video-editing-tools/bin/python -c "import numpy, PIL, faster_whisper"`
 - `~/.video-editing-tools/bin/ffmpeg -version` and `~/.video-editing-tools/bin/ffprobe -version`
 
 If everything works, tell the person in one line that their video tools are ready, then hand back to the skill that sent you here.
@@ -43,7 +44,7 @@ Wait for yes.
    - Mac: run `python3` once. macOS shows a pop-up offering to install its developer tools. Tell the person: "A box popped up on your screen. Click Install, then tell me when it's done." Wait for them.
    - Windows: run `winget install Python.Python.3.12`.
 2. **The private tool folder:** `python3 -m venv ~/.video-editing-tools`. On Windows, the folder uses `Scripts` instead of `bin` everywhere below.
-3. **The add-ons:** `~/.video-editing-tools/bin/pip install numpy faster-whisper static-ffmpeg`.
+3. **The add-ons:** `~/.video-editing-tools/bin/pip install numpy pillow faster-whisper static-ffmpeg`.
 4. **ffmpeg and ffprobe**, with no password needed:
    - Run `~/.video-editing-tools/bin/static_ffmpeg_paths`. The first run downloads ffmpeg, then prints two lines, `FFMPEG=<path>` and `FFPROBE=<path>`.
    - Link both into the tool folder: `ln -sf <printed ffmpeg path> ~/.video-editing-tools/bin/ffmpeg` and `ln -sf <printed ffprobe path> ~/.video-editing-tools/bin/ffprobe`. On Windows, copy the two files there instead.

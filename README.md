@@ -12,8 +12,11 @@ Made by [Alysha](https://github.com/alyshadotmd) while building her own AI video
 | [`aroll-processing`](skills/aroll-processing/SKILL.md) | Turns raw talking-head footage into a tight rough cut. Drop in one long recording or several recordings of the same script, and it finds every take, picks the best piece of each line (from any recording), and cuts it so no word is chopped and no pause is left. Shows you the picks first, or just does the edit. |
 | [`broll-processing`](skills/broll-processing/SKILL.md) | Turns raw b-roll into a tagged library of short clips. AI watches and tags every moment, you pick the keepers and say why, and only your picks get cut and saved. Your reasons become rules, so it learns your taste. |
 | [`broll-selection`](skills/broll-selection/SKILL.md) | Plans b-roll for a first cut, line by line: which lines need b-roll, which clip from your library fits, and what you still need to film. Places the clips after you approve. |
+| [`framing`](skills/framing/SKILL.md) | Lines the person up in every clip (eyes in the safe area, near the middle, one position for clips filmed the same way), then picks the lines that earn a punch-in or a slow push-in and plans every other clip around them. Never past 1.3x. |
+| [`headline`](skills/headline/SKILL.md) | Writes three completely different hook headlines for you to pick from, then places your pick above the head in a white box for the whole hook. |
+| [`captions`](skills/captions/SKILL.md) | Burned-in captions timed to every word: one word at a time, or a few words split by meaning, with an optional lit-up word in your colour. Stays in the safe area and out of the headline's way. |
 
-Start with a-roll processing for the rough cut. The b-roll pair works together: processing builds the library, selection places clips on the cut.
+**The editing order:** a-roll cut, b-roll, framing, headline, captions. Each skill picks up where the one before it left off. B-roll processing can also run on its own, any time you film b-roll.
 
 ## How to use them
 
