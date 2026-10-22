@@ -9,22 +9,22 @@ description: |
 
 The goal: the right b-roll on the right line, chosen the way the editor would choose it. B-roll does two jobs: it adds context to what's being said, and it keeps people watching.
 
-This skill works with any AI tool or agent. It reads from a tagged b-roll library (built by the `broll-processing` skill in this repo, or any folder of clips with tags and timestamps). Placing the clips needs ffmpeg or any video editor.
+This skill works with any AI tool or agent. It reads from a tagged b-roll library: a folder of short clips plus an index with a "Find by tag" table (each tag, then the clips that have it). The `broll-processing` skill builds one, and any folder of clips with tags works too. Placing the clips needs ffmpeg or any video editor.
 
 Talk to the editor in plain everyday words, one idea at a time.
 
 ## Step 1: Read the first cut
 
 1. Get the cut's timeline: every spoken line with its start and end time in the cut. A transcript with word timings works best.
-2. Read what's known about the project: the script, any b-roll picks for this project, and the brand's shoot files in the b-roll library.
+2. Read what's known about the project: the script and the brand's shoot files in the b-roll library (each kept clip with its tags and why it was picked).
 
 ## Step 2: Decide what each line needs
 
-For each line, write what's said and the kind of shot that shows it (using the library's tags). Rules, in order:
+For each line, write what's said and the kind of shot that shows it, in the library's tags. This is where a clip gets its meaning: the same yawn can be the "before" in one video and a relatable moment in another. Rules, in order:
 
 1. **Show the line literally.** "This just got delivered" gets the full unopened package; "the ingredients" gets someone pointing at the ingredients; "trying to get through the day" gets a tired face, a sigh or a yawn.
 2. **Match the product to the moment.** A delivery means the full package; a nighttime routine means the product in use. Use the form the viewer would expect at that point in the story.
-3. **Use the best 1 to 2 seconds of a long clip.** Pick the slice with the most action. Staged-looking pretty shots work as short accents.
+3. **Use the best 1 to 2 seconds of a long clip.** Pick the slice with the most action. Close-ups work as short accents.
 4. **Chain related clips into a mini story.** Unboxing goes tear the top off, show inside, pull one out. Using the product goes open, pour, mix, sip. Working on the couch goes into lying down for a nap.
 5. **The happy creator with the product goes near the end.** Use it by the call to action, or on any line that isn't visual on its own.
 

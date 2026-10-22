@@ -17,7 +17,7 @@ They work as a pair: processing builds the library, selection uses it.
 
 1. **Agents that support skills** (Claude Code, Codex, and other tools that read `SKILL.md` files): copy a skill folder into your tool's skills folder.
 2. **Any chat AI:** paste the `SKILL.md` into the chat (or a project's instructions) and then send your footage or first cut.
-3. **Set up your library:** copy the files in [`templates/`](templates/) into a folder for your b-roll. The skills fill them in.
+3. **Set up your library:** the templates live inside the skill that fills them in ([`broll-processing/templates/`](skills/broll-processing/templates/)). Copy them into a folder for your b-roll. Each skill folder works on its own, templates included.
 
 ## What you need
 
