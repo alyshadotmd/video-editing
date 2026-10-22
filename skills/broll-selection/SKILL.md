@@ -19,6 +19,10 @@ In Runneth, everything is already installed: skip this section.
 
 In Claude Code, this skill needs the free video tools the **video-editing-setup** skill installs. Check quietly that `~/.video-editing-tools/bin/ffmpeg -version` runs. If it does, use the tools in `~/.video-editing-tools/bin` (`ffmpeg`, `ffprobe`, `python`) wherever this skill says `ffmpeg`, `ffprobe` or `python3`, and carry on. If it doesn't, follow the video-editing-setup skill first, then come back here.
 
+## Step 0: Make sure the b-roll is in the library
+
+This skill places clips from a tagged b-roll library. Before planning, check that every b-roll file for this video is in the library, with a shoot file. Any raw b-roll that isn't gets run through the **broll-processing** skill first, then come back here.
+
 ## Step 1: Read the first cut
 
 1. Get the cut's timeline: every spoken line with its start and end time in the cut. A transcript with word timings works best.
@@ -31,8 +35,11 @@ For each line, write what's said and the kind of shot that shows it, in the libr
 1. **Show the line literally.** "This just got delivered" gets the full unopened package; "the ingredients" gets someone pointing at the ingredients; "trying to get through the day" gets a tired face, a sigh or a yawn.
 2. **Match the product to the moment.** A delivery means the full package; a nighttime routine means the product in use. Use the form the viewer would expect at that point in the story.
 3. **Use the best 1 to 2 seconds of a long clip.** Pick the slice with the most action. Close-ups work as short accents.
-4. **Chain related clips into a mini story.** Unboxing goes tear the top off, show inside, pull one out. Using the product goes open, pour, mix, sip. Working on the couch goes into lying down for a nap.
+4. **Chain related clips into a mini story.** Unboxing goes tear the top off, show inside, pull one out. Using the product goes open, pour, mix, sip. Working on the couch goes into lying down for a nap. Short slices of one action placed back to back (half a second of ripping the bag, half a second of opening it, half a second of pulling a packet out) make a strong mini story.
 5. **The happy creator with the product goes near the end.** Use it by the call to action, or on any line that isn't visual on its own.
+6. **A clip means what its whole shoot shows.** Read the shoot file's point and the full clip before using a slice of it. Working on the couch and then napping there is someone getting through a tired day; it shows daytime tiredness, so it fits a "getting through the day" line and never a "lying in bed at night" line.
+7. **Each shot is used once per video.** One stretch of footage covers one moment in the story. The exception is back-to-back slices of the same action forming one mini story (rule 4), which count as a single use.
+8. **A line with no clip that truly fits stays on the person talking.** A close-enough clip that shows something different is worse than no b-roll. Add the missing shot to the still-to-film list only when it would clearly help the video.
 
 ## Step 3: Pull the clips
 
@@ -48,5 +55,6 @@ Show a short table: line number, what's said, the b-roll (shoot, clip, exact sec
 
 1. Trim each approved slice from its clip.
 2. Lay it over the cut at its line, with the speaker's audio running underneath unchanged. Cut the b-roll in and out on cut points or in the gaps between words.
-3. Re-check the edit after placing: audio length matches video length, every b-roll slice lines up with its line, and captions (if any) still read cleanly over the new footage.
-4. Turn the editor's feedback on the placement into general rules in Step 2 above. Rewrite and combine rules instead of piling on new ones.
+3. **Stacked b-roll butts together frame for frame.** When two b-roll slices sit next to each other, the second starts on the exact frame the first ends, so no frame of the person talking slips through between them. Place every slice on whole frames (snap times to the frame rate) so rounding can't open a gap.
+4. Re-check the edit after placing: audio length matches video length, every b-roll slice lines up with its line, captions (if any) still read cleanly over the new footage, and no stretch of the person talking shorter than about 0.3 seconds sits between two b-roll slices (a frame or two of it reads as a glitch). Check by listing every cut in the finished video (scene changes) and comparing it to the plan.
+5. Turn the editor's feedback on the placement into general rules in Step 2 above. Rewrite and combine rules instead of piling on new ones.
