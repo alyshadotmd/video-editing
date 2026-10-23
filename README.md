@@ -15,6 +15,7 @@ Made by [Alysha](https://github.com/alyshadotmd) while building her own AI video
 | [`broll-selection`](skills/broll-selection/SKILL.md) | Plans b-roll for a first cut, line by line: which lines need b-roll, which clip from your library fits, and what you still need to film. Places the clips after you approve. |
 | [`framing`](skills/framing/SKILL.md) | Lines the person up in every clip (eyes in the safe area, near the middle, one position for clips filmed the same way), then picks the lines that earn a punch-in or a slow push-in and plans every other clip around them. Never past 1.3x. |
 | [`headline`](skills/headline/SKILL.md) | Writes three completely different hook headlines for you to pick from, then places your pick above the head in a white box for the whole hook. |
+| [`post-preview`](skills/post-preview/SKILL.md) | Exact safe zones for 9:16 video on Instagram Reels, Stories and Feed, TikTok and Facebook, measured from real iPhone screenshots. Framing, headline and captions all keep to its one safe box. |
 | [`captions`](skills/captions/SKILL.md) | Burned-in captions timed to every word: one word at a time, or a few words split by meaning, with an optional lit-up word in your colour. Stays in the safe area and out of the headline's way. |
 
 **The editing order:** setup, b-roll processing (on any raw b-roll), a-roll cut, b-roll selection, framing, headline, captions. `edit-video` runs them all for you; each skill also works on its own when you only need one step.

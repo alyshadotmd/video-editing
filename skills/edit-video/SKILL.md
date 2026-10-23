@@ -46,7 +46,7 @@ Each skill runs its own checks before the next one starts. When one fails a chec
 
 ## Step 5: Final check and handover
 
-Run every check from framing, headline and captions once more on the finished video. Then hand it over with a short list of what each step left behind:
+Run every check from framing, headline and captions once more on the finished video, plus two that problems slip past: the a-roll word-gap check (transcribe the finished video; no gap over about 0.3s between words) and the b-roll segment check (every segment between edges, talking head or b-roll, is at least about 0.3s; no stray frames). Then hand it over with a short list of what each step left behind:
 
 1. **B-roll processing:** the clips saved to the library, the shoot file, and the updated library index.
 2. **A-roll processing:** the takes file and the cut list.

@@ -60,7 +60,7 @@ Every caption uses **Figtree Bold**, white, with a black outline. No box, no sha
 ## Step 4: Where they sit
 
 1. **Centred, at chest height,** about y 1260 to 1305 in a 1080x1920 video: below the chin, above the app's caption and buttons.
-2. **Inside the safe area:** every letter within x 180 to 900 and above y 1340. Measure each chunk's width; a chunk too wide gets split.
+2. **Inside the safe area:** The safe zones come from the **post-preview** skill: keep everything inside **x 100 to 880, y 290 to 1340** on a 1080x1920 frame (the one box that's safe on Reels, Stories, Feed, TikTok and Facebook). Check post-preview for a placement's exact covered areas when something runs close to an edge. Centred captions therefore keep every letter (outline included) within x 200 to 880, which is about 680px wide, and above y 1340. Measure each chunk's width; a chunk too wide gets split.
 3. **Clear of the headline.** While the headline is on screen, captions sit below it with a clear gap; when the headline sits low, captions move down within the safe area rather than overlapping it.
 4. **The same spot all video,** so the eye always knows where to look.
 5. **Captions sit below the mouth, never across the face.** Every caption clears the eyes, nose and mouth. When the face sits so low that the caption spot would cover it, the framing is what's wrong: send it back to framing to fix (or move the caption down within the safe area while it's fixed).

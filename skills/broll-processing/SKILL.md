@@ -63,7 +63,8 @@ Skip the question if the editor already said which one in their message ("just d
 1. Pick the moments yourself, using "What makes a moment worth keeping" in order. Always keep the video's point (rule 4) and bank the evergreen shots (rule 9).
 2. When the same action happens more than once, keep the cleanest take.
 3. Write a start, an end and a one-line reason for every pick.
-4. Check each pick on full-size frames before cutting: the product is sharp, the creator's eyes are on the product or the camera, and the times are right (AI times are close, not exact). Drop any pick that fails.
+4. Check each pick on full-size frames before cutting, at least every half second from start to end (not just the middle): the product is sharp, the eyes pass rule 3 on every frame, and the times are right (AI times are close, not exact). Drop any pick that fails, or trim it to the stretch that passes.
+5. Before saving, compare the picks from each video side by side. When two picks show nearly the same shot (same framing, same subject), keep only the one with the most action and drop the other (rule 11).
 
 ## Step 4: Cut the picks and save them
 
@@ -85,7 +86,7 @@ These rules came from a real editor's picks and reasons on a UGC product shoot. 
 
 1. **Movement.** The best moment in a shot is where something changes: a head turn, a hand gesture, a new expression, a pet walking in. A shot where nothing moves reads like a photo. A still shot is only kept as a short accent (a clean product close-up); tag it `static`.
 2. **A face that acts out the feeling.** A sigh, a yawn, head in hands, a big smile. The expression shows the line's feeling on its own.
-3. **Eyes in the scene.** The clip starts and ends while the creator is looking at what they're doing. Start after any glance at the camera or off to the side. If they hold the product up but look somewhere else, they're checking the frame, not doing a take. It reads as weird on screen, so skip it.
+3. **Eyes with intention.** Looking at the camera only counts when it's on purpose: a selfie, talking or reacting to the viewer, or showing the product to the lens. Otherwise the eyes belong on the subject of the shot (the drink, the laptop, the packet). A creator who looks into the lens while just sitting there, or glances off to the side, is checking themselves in the frame (often at a phone screen set off to one side), and that stretch isn't the take. The real take is the stretch where they're not checking: the yawn, the stir, the sigh. Start after any check and end before the next one; a stretch where they check the frame more than once is skipped.
 4. **The video's point is always picked.** Every b-roll video was filmed to show something, and the moment that shows it most clearly is always a keeper. Read the point from the footage itself: what most of the video is spent on, or what the creator sets up and then shows. The point can be anything: a product pouring smoothly, a competitor's powder clumping, a messy "before", a pet doing something funny. Showing the product working is one kind of point, not the rule. If the moment that shows the point isn't usable (blurry, out of frame), it becomes the first reshoot note instead.
 5. **Real life in the frame.** Pets, small funny moments (tossing an empty packet) and other unplanned details make b-roll feel real and give viewers something to look at.
 6. **The natural, flattering version.** When the creator does the same action twice, the one that looks natural and like a real person wins (a yawn with a hand over the mouth).
@@ -93,6 +94,8 @@ These rules came from a real editor's picks and reasons on a UGC product shoot. 
 8. **The whole product.** Show the full package, and flip it to show the back. Turning it adds movement and introduces the product, and the back carries details like ingredients.
 9. **Evergreen shots, every time.** Bank these from every product shoot, even when the current video won't use them: unboxing (tear, look inside, pull one out), product in use (open, pour, mix, sip), pointing at the ingredients, creator smiling with the product, clean product close-up, holding the product. Any good close-up is worth banking too (a glass held up to the lens, hands mixing); tag it `closeup:<what>` so it can be used as a short accent.
 10. **Short is fine.** A clean 2-second slice is a usable clip.
+11. **One version of each shot.** When two moments look nearly the same (the same glass held close to the lens), bank only the one where something is happening (stirring it). The still version is never saved alongside it.
+12. **Cut to the main action.** Every b-roll video has a payoff motion it was filmed for (pulling the blanket up over herself, the pour, the yawn). The pick holds that motion with only a beat before it. Setup and fussing (adjusting the blanket, rearranging the pillow, getting the packet ready) stay out, even when they're in the same stretch.
 
 ## Rules for every tag
 

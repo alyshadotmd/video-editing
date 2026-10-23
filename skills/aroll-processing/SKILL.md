@@ -77,9 +77,10 @@ What to judge stays the same in both. How to see it depends on the tool:
 
 The cut is really tight: speech runs straight into speech everywhere, inside kept takes too. Thinking pauses and breaths between phrases get cut. The only held moment is about 0.5s on the last frame.
 
-1. **Edges come from the speech islands**, not the transcript. Each kept piece starts at its island's first sound and ends at its last.
+1. **Edges come from the speech islands**, not the transcript. Each kept piece starts at its island's first sound and ends at its last. Breaths, lip smacks and handling noise before the first word can poke above -30dB and get stitched into the island, so a piece starts at the onset of its first word (where the level jumps up to speech, usually -25dB or louder), not at the first blip. Any stretch of breath or noise at the start or end of a piece gets cut. Ends work the other way: a line often trails off quietly ("asleep at night" said softly), so a piece ends after its last word even when that word is quieter than the rest. Check the last word of every line is in the cut's transcript.
 2. **Pauses inside a kept take** get found with a more sensitive pass, `silencedetect=n=-30dB:d=0.2`, and every one of 0.25s or more is cut out. Restarts and repeated words inside a take get cut too, keeping only the clean final phrasing.
 3. **Pad each piece about 0.05s on each side.** More leaves a pause; less chops a word.
+   Then snap every edge to a whole frame (start rounds down to the frame before, end rounds up to the frame after). Edges between frames make the join duplicate or drop frames, which moves every later cut by a frame or two and lets stray frames through when b-roll is placed on the cuts.
 4. **Pieces shorter than about 0.3s are almost always leftovers** (a stray syllable). Drop them unless they hold a whole word.
 5. Add a 20ms audio fade at every joint and join everything in one re-encode from a working copy. The original file stays untouched.
 6. Save the list of pieces (`[[start, end], ...]` in seconds) as `clips.json`; the check script reads it.
@@ -94,7 +95,8 @@ Every version the editor sees has passed every check on that exact file. A check
    - **Gaps:** no pause of 0.25s or more anywhere in the cut except the final hold.
    With several recordings, run it once per recording: that recording's audio as `--voice` and only its pieces in `clips.json`, each time with the same cut as `--out`.
    If the sound comes from a different file than the picture (a separate mic), also cut the camera's own audio with the same trims and pass it as `--camlock`, so the script checks sync too (every 3 seconds within 40ms).
-2. **Every word, whole, once:** transcribe the cut and compare it to the cut list word for word. A half word at a joint means that edge is too tight. A repeated word or phrase at a joint means a leftover restart.
+2. **Every word, whole, once:** transcribe the cut with word timings and compare it to the cut list word for word. A half word at a joint means that edge is too tight. A repeated word or phrase at a joint means a leftover restart.
+   **No dead air between words:** in that transcript, no gap between one word ending and the next starting is longer than about 0.3s (except the final hold). The gap check in the script only finds quiet pauses; a pause full of breathing is loud enough to pass it, so this word-gap check is what catches it. Trim the piece to its first word and run every check again.
 3. **Each joint, one by one:** for every cut, name the last word before it and the first word after it, and confirm both are fully said. Transcribe a 2-second window around each joint to check (a general "any problems?" lets a chopped word slip through). In Runneth, also have the video model watch the cut as a picky first-time viewer and list problems with times: clipped or stray words, glitches, frozen frames, jarring jumps.
 4. **Length:** the cut's length matches the cut list total.
 
