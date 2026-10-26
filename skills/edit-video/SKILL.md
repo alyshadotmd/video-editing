@@ -56,4 +56,6 @@ Run every check from framing, headline and captions once more on the finished vi
 6. **Captions:** the captions file.
 7. **The finished video.**
 
+In Runneth, add the finished video to the studio with the **studio** skill and hand over its studio link. When the person chose to check in at each step, every version they watch along the way goes into the studio too.
+
 A step with nothing to list was skipped: go back and run it before handing over. The one exception is b-roll processing when there was no raw b-roll; list it as "no raw b-roll this time".
