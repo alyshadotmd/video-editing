@@ -14,6 +14,8 @@ This skill is built for **Claude Code** and **Runneth**.
 
 In Claude Code, run the **video-editing-setup** skill first. In Runneth, skip this.
 
+In Runneth with the **edit-studio** skill installed, run it next, every time: it finds this video's project or makes a new one (its folder with the info document, script, version log, raw footage, b-roll picks, drafts and final, plus its card in the content studio). Every step below saves into that folder.
+
 ## Step 2: Sort the footage
 
 Go through every file and decide what it is:
